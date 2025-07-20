@@ -1,0 +1,16 @@
+{
+  "name": "tic_tac_toe",
+  "version": "1.0.0",
+  "description": "Classic Tic-Tac-Toe game built with HTML, CSS, and JavaScript using DOM manipulation. Two-player mode with interactive UI.",
+  "keywords": [
+    "tic-tac-toe",
+    "javascript"
+  ],
+  "license": "ISC",
+  "author": "Afan-Qaiser-Official",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

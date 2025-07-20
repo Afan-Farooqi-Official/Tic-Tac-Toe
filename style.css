@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: yellow;
+    text-align: center;
+}
+
+/* explanation of vh
+    vh stands for viewport height. This unit is based on the height of the viewport. 
+    A value of 1vh is equal to 1% of the viewport height. 
+    A value of 100vh is equal to 100% of the viewport height. 
+*/
+
+.container {
+    background-color: wheat;
+    height: 70vh;
+    display: flex; /* all boxes in single line */
+    justify-content: center;
+    align-items: center;
+}
+
+/* explanation of vmin
+    A value of 1vw is equal to 1% of the viewport width. 
+    vmin stands for viewport minimum. This unit is based on the smaller dimension of the viewport. 
+    If the viewport height is smaller than the width, the value of 1vmin will be equal to 1% of the viewport height. 
+*/
+
+.game {
+    background-color: white;
+    height: 60vmin;
+    width: 60vmin;
+    display: flex; /* all boxes in single line */
+    flex-wrap: wrap;    /* agar jaga nhi tu multiple lines use karlo */
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin; /* defines the size of the gap between the rows and between the columns in flexbox, grid or multi-column layout. It is a shorthand for the following properties: row-gap. column-gap. */
+}
+
+/* justify-content vs align-item
+    justify-content and align-items are CSS properties used to align items within a flex or grid container, 
+    but they operate on different axes. justify-content aligns items along the main axis (horizontal by default), 
+    while align-items aligns items along the cross axis (vertical by default).  
+*/
+
+.box {
+    background-color: aqua;
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;   /* by defult black border tu=ha wo ghayab */
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    font-size: 8vmin;
+    color: #b0413e;
+}
+
+#reset-btn {
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: black;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+}
+
+#new-btn {
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: black;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+}
+
+#message {
+    color: green;
+    font-size: 6vmin;
+}
+
+/* difference between justify item and align items
+To center an element, we use the align-items property to align the item on the cross axis,
+which in this case is the block axis running vertically. 
+We use justify-content to align the item on the main axis, 
+which in this case is the inline axis running horizontally.
+*/
+
+.msg-container {
+    background-color: azure;
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+#drawMsg {
+    color: rgb(253, 2, 2);
+    font-size: 6vmin;
+}
+
+/* .draw-container  {
+    background-color: rgb(15, 199, 199);
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+} */
+
+.hide{
+    display: none;
+}
